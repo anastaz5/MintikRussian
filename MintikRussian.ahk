@@ -236,13 +236,13 @@ Hotkey, %KEY20%, f5, On, UseErrorLevel
 Gui, Main: Add, Tab, x0 y0 w732 h400 , Хоткеи|Настройки
 Gui, Main: -MaximizeBox
 Gui, Main: -SysMenu
-Gui, Main: Show, w732 h400, Admin.ahk by Mint
+Gui, Main: Show, w732 h400, Admin.ahk by Mint + bless
 Gui, Main: Add, Button, x675 y2 w25 h16 ghide, —
 Gui, Main: Add, Button, x705 y2 w25 h16 gClose, X
 Gui, Main: Color, 313338
 Gui, Main: Font,cwhite, 
 
-Gui, Main: Add, Text, x12 y382 w62 h15 +0x200 +BackgroundTrans +border, ahk by Mint
+Gui, Main: Add, Text, x12 y382 w62 h15 +0x200 +BackgroundTrans +border, ahk by Mint + bless
 
 ;Левый блок кнопок
 Gui, Main: Add, Button, x10 y128 w64 h21 gInfo , Инфо
@@ -372,7 +372,7 @@ Gui, Main: Add, Text, x65 y185 w120 h14 +0x200, Номер фракции
 Gui, Main: Add, Edit, x12 y182 w48 h21 vFraction +number cblack, %Fraction%
 
 Gui, Main: Add, Button, x10 y310 w64 h21 gSaveData, Сохранить
-Gui, Main: Add, Text, x12 y382 w62 h15 +0x200 +BackgroundTrans +border, ahk by Mint 
+Gui, Main: Add, Text, x12 y382 w62 h15 +0x200 +BackgroundTrans +border, ahk by Mint  + bless
 
 ;динамик
 SaveData1: 
