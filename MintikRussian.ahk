@@ -696,60 +696,6 @@ return
 
 	Return
 ;===================================================================================
-F5:
-SendInput, {F5}
-return
-
-;Памятка
-	Cheatsheet:
-    Cheatsheet1:=!Cheatsheet1
-    If Cheatsheet1
-    {
-    CustomColor2 = 	EEAA99
-    Gui Cheatsheet: +LastFound +AlwaysOnTop -Caption +ToolWindow
-    Gui Cheatsheet: Color, black
-    Gui Cheatsheet: Font, s7
-    Gui Cheatsheet: Font, w3000
-    Gui Cheatsheet: Font, cFFFFFF
-    Gui Cheatsheet: Add, Text,,  Фракции: 1 - LSPD   2 - EMS   3 - SD   4 - SANG   5 - GOV   6 - WN   7 - FIB   8 - Ballas   9 - Vagos   10 - Fam   11 - Bloods   12 - Mara   
-    Gui Cheatsheet: Add, Text, x15 y35 cYellow,  DM - Demorgan 100 минут / WARN / Ban 3 - 30 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Обман в /do - Demorgan 35 минут / WARN
-    Gui Cheatsheet: Add, Text, cYellow,  DB - Demorgan 30 - 90 минут / WARN / Ban 3 - 30 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Помеха работе администрации - Kick / Mute 10 - 60 минут / Demorgan 10 - 100 минут / WARN / Ban 3 - 30 дней
-    Gui Cheatsheet: Add, Text, cYellow,  nonRP поведение - Demorgan 15 - 90 минут / WARN / Ban 3 - 15 дней
-    Gui Cheatsheet: Add, Text, cYellow,  SK - Ban 2-5 дней / Hardban 2 - 7 дней
-    Gui Cheatsheet: Add, Text, cYellow,  nonRP Drive - Demorgan 15 - 90 минут / Ban 3-7 дней
-    Gui Cheatsheet: Add, Text, cYellow,  TK -  Demorgan 90 минут / WARN
-    Gui Cheatsheet: Add, Text, cYellow,  nonRP Fly - Demorgan 10 - 35 минут
-    Gui Cheatsheet: Add, Text, cYellow,  Крайм без маски - Demorgan 15 минут
-    Gui Cheatsheet: Add, Text, cYellow,  PG - Demorgan 35-90 минут / WARN / Ban 2-7 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Оогонь с транспортного средства - Ban 3-5 дней / HardBan 7 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Криминальные действия по отношению к сотрудникам EMS - Demorgan 90 минут / WARN
-    Gui Cheatsheet: Add, Text, cYellow,  Поднимать предметы во время перестрелки - Demorgan 35 минут / WARN
-    Gui Cheatsheet: Add, Text, cYellow,  Намеренно менять / убирать оружие с целью его сохранения - WARN / Ban 2 дня
-    Gui Cheatsheet: Add, Text, x700 y35 cYellow,  Музыка ЗЗ - Mute 30-60 минут
-    Gui Cheatsheet: Add, Text, cYellow,  Уход от RP - WARN / Ban 4-8 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Перестрелка / стрельба в ЗЗ - Demorgan 35 - 100 минут / WARN / Ban 3 - 30 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Криминальные действия ЗЗ - Demorgan 10 - 100 минут / WARN / Ban 3 дня
-    Gui Cheatsheet: Add, Text, cYellow,  Брить без причины - Demorgan 60-100 минут / WARN / Ban 2-5 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Не снимать стяжки/мешки - Demorgan 60 минут
-    Gui Cheatsheet: Add, Text, cYellow,  
-    Gui Cheatsheet: Add, Text, cYellow,  Использование предметов для восстановления здоровья/брони во время перестрелки - Demorgan 35 - 90 минут
-    Gui Cheatsheet: Add, Text, cYellow,  Использование предметов лечения / замены бронежилетов во время езды на транспортном средстве - Demorgan 15 - 35 минут
-    Gui Cheatsheet: Add, Text, cYellow,  Провоцировать игроков на нарушение правил сервера - Demorgan 35 - 90 минут / Ban 3-30 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Провоцирующие действия в сторону государственных Сотрудников - Ban 2-5 дней
-    Gui Cheatsheet: Add, Text, cYellow,  Завуалированные оскорбление вероисповедания, религии и нации - Ban 15 - 30 дней / Hardban 15-30 дней / Permban
-    Gui Cheatsheet: Add, Text, cYellow,  Прямые оскорбления вероисповедования, религии , нации - HardBan 30 - 60 дней / PermBan
-    Gui Cheatsheet: Add, Text, cYellow,  Помеха РП процессу - Ban 2-5 дней
-    Gui Cheatsheet: Add, Text, cYellow,  
-    WinSet, TransColor, %CustomColor2% 200
-    Gui Cheatsheet: Show, x%X2% y%Y2% NoActivate, window.
-    }
-    Else
-    Gui Cheatsheet: Destroy
-	Return
-
-;===================================================================================
 
 ds:
 Run, https://discord.gg/QumavEcuMX
@@ -757,7 +703,7 @@ return
 
 ;===================================================================================
 upturn:
- newScriptPath := A_ScriptDir "\Mintik.ahk"
+ newScriptPath := A_ScriptDir "MintikRussian.ahk"
  UrlDownloadToFile, https://github.com/anastaz5/MintikRussian.git , %newScriptPath%
  Sleep, 500
  MsgBox, 64, adm, Биндер обновлен.
@@ -1776,11 +1722,11 @@ Return
 :?:администарция::администрация
 :?:администаратору::администратору
 ; Наказания
-:?:.хард::/hardban{space}  
-:?:.мут::/mute{space}
-:?:.дмг::/ajail{space}
-:?:.варн::/warn{space}
-:?:.бан::/ban{space}
+:?:.хард::/hardban  
+:?:.мут::/mute
+:?:.дмг::/ajail
+:?:.варн::/warn
+:?:.бан::/ban
 :?:.хард9::/hardban 9999 Cheats{left 12}
 :?:.софт::/hardban 9999 Cheats{left 12}
 :?:.рыбак::/hardban 9999 Использование ПО{left 22}
@@ -1832,11 +1778,11 @@ Return
 :?:.запретка::/mute 120 3.6 Основных Правил Проекта{left 30}
 :?:.ск::/gunban 10 SK{left 6}
 
-:?:/[fhl::/hardban{space}
-:?:/ven::/mute{space}
-:?:/lvu::/ajail{space}
-:?:/dfhy::/warn{space}
-:?:/,fy::/ban{space}
+:?:/[fhl::/hardban
+:?:/ven::/mute
+:?:/lvu::/ajail
+:?:/dfhy::/warn
+:?:/,fy::/ban
 :?:/jnrfp::/hardban 9999 Отказ от проверки{left 23}
 :?:/hs,fr::/hardban 9999 Использование ПО{left 22}
 :?:/cjan::/hardban 9999 Cheats{left 12}
@@ -1885,42 +1831,10 @@ Return
 :?:/e[jl5::/hardban 5 Уход от RP{Left 13}
 :?:/,up::/warn Использование уязвимостей системы и багов{Left 41}
 
-;===================================================================================
-
-:?:/ljv2::
-IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
-if Dinamic = 
-{
-msgbox,16, Ошибка, Динамик не введен!
-}
-else
-SendInput,/setdim %Dinamic% 22{Enter}
-sleep 200
-SendInput, {T}
-sleep 200
-SendInput,/ctp 3067.225 2215.361 2.854 {Enter}{Enter}
-sleep 200
-SendInput,{Enter}
-return
-:?:.дом2::
-IniRead, Dinamic, %A_ScriptDir%\res\Settings.ini, ID, Dinamic 
-if Dinamic = 
-{
-msgbox,16, Ошибка, Динамик не введен!
-}
-else
-SendInput,/setdim %Dinamic% 22{Enter}
-sleep 200
-SendInput, {T}
-sleep 200
-SendInput,/ctp 3067.225 2215.361 2.854 {Enter}{Enter}
-sleep 200
-SendInput,{Enter}
-return
 
 ;===================================================================================
 change:
-    MsgBox, 8192, 05.09.2026 Обновления:`n , Можно узнать в Дискорде АХК.
+    MsgBox, 8192, 06.09.2026 Обновления:`n , Можно узнать в Дискорде АХК.
 return
 ;===================================================================================
 
