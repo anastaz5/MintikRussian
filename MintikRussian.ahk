@@ -1601,8 +1601,8 @@ GoSub, UpdateCounter
 Clipboard :=
 }
 Return
-:?:/wch::/warncheck{space}
-:?:/gch::/gunbancheck{space}
+:?:/wch::/warncheck
+:?:/gch::/gunbancheck
 :?:.хевик::/gw  weapon_heavysniper_mk2 999{Left 27}
 :?:/[tdbr::/gw  weapon_heavysniper_mk2 999{Left 27}
 :?:/vr2::/gw  weapon_specialcarbine_mk2 999{Left 30}
@@ -1611,10 +1611,10 @@ Return
 :?:/uhfyfnf::/gw  weapon_grenade 999{Left 19}
 :?:/hgu::/gw  weapon_rpg 999{Left 15}
 :?:.рпг::/gw  weapon_rpg 999{Left 15}
-:?:/bch::/bancheck{space}
-:?:.иср::/bancheck{space}
-:?:/jch::/ajailcheck{space}
-:?:.оср::/ajailcheck{space}
+:?:/bch::/bancheck
+:?:.иср::/bancheck
+:?:/jch::/ajailcheck
+:?:.оср::/ajailcheck
 :?:.ифтсрусл::/bancheck{space}
 :?:.фофшдсрусл::/ajailcheck{space}
 :?:/tf::/tempfamily{space}
@@ -1631,7 +1631,7 @@ Return
 :?:.еуьздуфвук 9::/templeader 9
 :?:.еуьздуфвук 10::/templeader 10
 :?:.еуьздуфвук 11::/templeader 11
-:?:/sm::/setmaterials{space}
+:?:/sm::/setmaterials
 :?:.ыь::/setmaterials{space}
 :?:/tn::/tempname{space}
 :?:.ет::/tempname{space}
@@ -1655,13 +1655,13 @@ Return
 :?:.фа::/ainfect{space}
 :?:/sk::/skick{space}
 :?:.ыл::/skick{space}
-:?:/k::/kick{space}
-:?:.л::/kick{space}
-:?:/ai::/auninvite{space}
-:?:.фш::/auninvite{space}
+:?:/k::/kick
+:?:.л::/kick
+:?:/ai::/auninvite
+:?:.фш::/auninvite
 :?:.аи::/fb{space}
-:?:/aif::/ainfect{space}
-:?:.фша::/ainfect{space}
+:?:/aif::/ainfect
+:?:.фша::/ainfect
 :?:.с::/c{space}
 :?:.си::/cb{space}
 :?:.гтьгеу::/unmute{space}
@@ -1710,34 +1710,34 @@ Return
 :?:.пр::/gh{space}
 :?:.штм::/inv 
 :?:.шв::/id{space}
-:?:.рз::/hp{space}
-:?:.од::/ajail{space}
+:?:.рз::/hp
+:?:.од::/ajail
 :?:.еуьздуфвук::/templeader{space}
 :?:.еуьздуфвук 7::/templeader 7
 :?:.еуьздуфвук 3::/templeader 3
 :?:.еуьздуфвук 4::/templeader 4
 :?:.еуьздуфвук 2::/templeader 2
-:?:.фофшд::/ajail{space}
-:?:.лшсл::/kick{space}
+:?:.фофшд::/ajail
+:?:.лшсл::/kick
 :?:.кузфшк::/repair 
 :?:.вд::/dl 
 :?:.уыз::/esp 3
 :?:.уыз3::/esp 3 
-:?:.пуесфк::/getcar{space}
+:?:.пуесфк::/getcar
 :?:.ифт::/ban 
 :?:.вудмур::/delveh 
 :?:.ьез::/mtp 
-:?:.мур::/veh{space}
+:?:.мур::/veh
 :?:.фмур::/aveh 
-:?:.рфквифт::/hardban{space}
-:?:.ьгеу::/mute{space}
-:?:.пшв::/gid{space}
-:?:.ср::/chide{space}
-:?:/ch::/chide{space}
+:?:.рфквифт::/hardban
+:?:.ьгеу::/mute
+:?:.пшв::/gid
+:?:.ср::/chide
+:?:/ch::/chide
 :?:.куысгу::/rescue{space}
 :?:.ыуевшь::/setdim{space}
 :?:/sd::/setdim{space}
-:?:.и::/b{space}
+:?:.и::/b
 :?:.ц::/w{space}
 :?:.ыв::/setdim{space}
 :?:.срусл::/check{space}
@@ -1760,10 +1760,10 @@ Return
 :?:/ns::/netstat 
 :?:.вм::/delveh 
 :?:/dv::/delveh 
-:?:/hard::/hardban{space}
-:?:.рфкв::/hardban{space}
-:?:/as::/asms{space}
-:?:.фы::/asms{space}
+:?:/hard::/hardban
+:?:.рфкв::/hardban
+:?:/as::/asms
+:?:.фы::/asms
 :?:.пез::/gtp
 :?:.пь::/gm
 :?:.тс::/noclip 
@@ -1780,28 +1780,28 @@ Return
 :?:/unb::/unban{space}
 :?:.гто::/unjail{space}
 :?:/unj::/unjail{space}
-:?:/dvr::/delvehrange{space}
-:?:.вмк::/delvehrange{space}
+:?:/dvr::/delvehrange
+:?:.вмк::/delvehrange
 :?:.щи::/objdl
 :?:/ob::/objdl
-:?:/pr::/prange{space}
-:?:.зк::/prange{space}
-:?:/fr::/frange{space}
-:?:.ак::/frange{space}
-:?:.акфтпу::/frange{space}
-:?:.зкфтпу::/prange{space}
+:?:/pr::/prange
+:?:.зк::/prange
+:?:/fr::/frange
+:?:.ак::/frange
+:?:.акфтпу::/frange
+:?:.зкфтпу::/prange
 :?:.зштп::/ping
-:?:/mch::/mutecheck{space}
-:?:.ьср::/mutecheck{space}
-:?:.щ::/o{space}
+:?:/mch::/mutecheck
+:?:.ьср::/mutecheck
+:?:.щ::/o
 :?:.снег::/togglesnow 0
 :?:.сет::/settimelocal 20 20 20
 :?:.клеар::/setweatherlocal extrasunny
 :?:/cytu::/togglesnow 0
 :?:/ctn::/settimelocal 20 20 20
 :?:/rktfh::/setweatherlocal extrasunny
-:?:.лида::/templeader{space}
-:?:/kblf::/templeader{space}
+:?:.лида::/templeader
+:?:/kblf::/templeader
 :?:.клирчат::/aclearchat
 :?:.опп::Основных правил проекта
 :?:.поип::Правила ограблений и похищений
