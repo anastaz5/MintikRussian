@@ -703,12 +703,16 @@ return
 
 ;===================================================================================
 upturn:
- newScriptPath := A_ScriptDir "MintikRussian.ahk"
- UrlDownloadToFile, https://github.com/anastaz5/MintikRussian.git , %newScriptPath%
- Sleep, 500
- MsgBox, 64, adm, Биндер обновлен.
- Run, %newScriptPath%
- ExitApp
+    newScriptPath := A_ScriptDir "\MintikRussian.ahk"
+    UrlDownloadToFile, https://raw.githubusercontent.com/anastaz5/MintikRussian/main/MintikRussian.ahk, %newScriptPath%
+    if ErrorLevel {
+        MsgBox, 16, Ошибка, Не удалось скачать обновление. Проверьте интернет.
+        return
+    }
+    Sleep, 500
+    MsgBox, 64, adm, Биндер обновлен.
+    Run, %newScriptPath%
+    ExitApp
 return
 
 ;===================================================================================
