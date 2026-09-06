@@ -85,7 +85,7 @@ IniRead, Radio7, %A_ScriptDir%\res\Settings.ini, Resolution, 1280х1024
 IniRead, Radio2k, %A_ScriptDir%\res\Settings.ini, Resolution, 2560x1440
 
 IniRead, Radio8, %A_ScriptDir%\res\Settings.ini, Login Commands, /chide
-IniRead, Radio9, %A_ScriptDir%\res\Settings.ini, Login Commands, /esp3
+IniRead, Radio9, %A_ScriptDir%\res\Settings.ini, Login Commands, /esp 3
 IniRead, Radio10, %A_ScriptDir%\res\Settings.ini, Login Commands, /dl
 IniRead, Radio11, %A_ScriptDir%\res\Settings.ini, Login Commands, /zzdebug
 IniRead, Radio12, %A_ScriptDir%\res\Settings.ini, Login Commands, /gm
@@ -311,7 +311,7 @@ Gui, Main: Add, Text, x333 y261 w104 h14 +0x200 , В разработке
 
 ;при входе
 Gui, Main: Add, CheckBox, x474 y50 w120 h23 vRadio8 Checked%Radio8%, /chide
-Gui, Main: Add, CheckBox, x474 y76 w120 h23 vRadio9 Checked%Radio9%, /esp3
+Gui, Main: Add, CheckBox, x474 y76 w120 h23 vRadio9 Checked%Radio9%, /esp 3
 Gui, Main: Add, CheckBox, x474 y102 w120 h23 vRadio10 Checked%Radio10%, /dl
 Gui, Main: Add, CheckBox, x474 y128 w120 h23 vRadio11 Checked%Radio11%, /zzdebug
 Gui, Main: Add, CheckBox, x474 y154 w120 h23 vRadio12 Checked%Radio12%, /gm
@@ -394,7 +394,7 @@ IniWrite, %Radio7%, %A_ScriptDir%\res\Settings.ini, Resolution, 1280х1024
 IniWrite, %Radio2k%, %A_ScriptDir%\res\Settings.ini, Resolution, 2560x1440
 
 IniWrite, %Radio8%, %A_ScriptDir%\res\Settings.ini, Login Commands, /chide
-IniWrite, %Radio9%, %A_ScriptDir%\res\Settings.ini, Login Commands, /esp3
+IniWrite, %Radio9%, %A_ScriptDir%\res\Settings.ini, Login Commands, /esp 3
 IniWrite, %Radio10%, %A_ScriptDir%\res\Settings.ini, Login Commands, /dl
 IniWrite, %Radio11%, %A_ScriptDir%\res\Settings.ini, Login Commands, /zzdebug
 IniWrite, %Radio12%, %A_ScriptDir%\res\Settings.ini, Login Commands, /gm
@@ -617,8 +617,8 @@ return
     Gui, Commandlist: Add, Text, x170 y680  h20 +0x200, .фофшд - /ajail 
     Gui, Commandlist: Add, Text, x170 y696  h20 +0x200, .лшсл - /kick 
     Gui, Commandlist: Add, Text, x170 y712  h20 +0x200, .вд - /dl 
-    Gui, Commandlist: Add, Text, x170 y728  h20 +0x200, .уыз - /esp3 
-    Gui, Commandlist: Add, Text, x170 y744  h20 +0x200, .уыз2 - /esp3 
+    Gui, Commandlist: Add, Text, x170 y728  h20 +0x200, .уыз - /esp 3 
+    Gui, Commandlist: Add, Text, x170 y744  h20 +0x200, .уыз2 - /esp 3  
 	Gui, Commandlist: Add, Text, x170 y760  h20 +0x200, .мур - /veh 
 
     Gui, Commandlist: Add, Text, x332 y24  h20 +0x200, .ифт - /ban 
@@ -921,7 +921,7 @@ if (Radio9==1)
 {
 SendInput, {T}
 Sleep 300
-SendInput, /esp3{Enter}
+SendInput, /esp 3{Enter}
 Sleep 300
 }
 if (Radio8==1)
