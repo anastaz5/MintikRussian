@@ -704,7 +704,7 @@ return
 ;===================================================================================
 upturn:
     newScriptPath := A_ScriptDir "\MintikRussian.ahk"
-    UrlDownloadToFile, https://raw.githubusercontent.com/anastaz5/MintikRussian/main/MintikRussian.ahk, %newScriptPath%
+    UrlDownloadToFile, https://github.com/anastaz5/MintikRussian.git , %newScriptPath%
     if ErrorLevel {
         MsgBox, 16, Ошибка, Не удалось скачать обновление. Проверьте интернет.
         return
@@ -1838,7 +1838,7 @@ Return
 
 ;===================================================================================
 change:
-    MsgBox, 8192, 06.09.2026 Обновления:`n , Можно узнать в Дискорде АХК. Изменения 13:08.
+    MsgBox, 8192, 06.09.2026 Обновления:`n , Можно узнать в Дискорде АХК.
 return
 ;===================================================================================
 
